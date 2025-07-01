@@ -4,112 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kerala Traditional Restaurant</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="header-inner container">
-      <a href="#" class="logo" aria-label="Kerala Traditional Restaurant Home">KERALA RESTAURANT</a>
-      <nav role="navigation" aria-label="Primary">
-        <a href="#menu" class="nav-link">Menu</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#order" class="nav-link">Order Now</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <a href="#" class="logo">KERALA RESTAURANT</a>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#services">Services</a>
+        <a href="#order">Order Now</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0" aria-expanded="false">
         <span></span><span></span><span></span>
       </div>
     </div>
-    <div class="nav-overlay" id="mobile-menu" aria-hidden="true">
+    <div class="nav-overlay" id="mobile-menu">
       <button class="close-btn" aria-label="Close menu">&times;</button>
-      <a href="#menu" class="nav-link">Menu</a>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#order" class="nav-link">Order Now</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#menu">Menu</a>
+      <a href="#services">Services</a>
+      <a href="#order">Order Now</a>
+      <a href="#contact">Contact</a>
     </div>
   </header>
 
-  <section class="hero container" aria-label="Welcome section">
-    <div class="hero-background"></div>
-    <div class="hero-content">
-      <h1>Welcome to Kerala Traditional Restaurant</h1>
-      <p>Experience Kerala’s rich culinary heritage with our takeout, delivery, and ready-to-eat meals crafted fresh daily.</p>
-      <button class="cta-btn" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})" aria-label="Order Now">Order Now</button>
-    </div>
+  <section class="hero container">
+    <h1>Welcome to Kerala Traditional Restaurant</h1>
+    <p>Experience Kerala’s rich culinary heritage. Takeout, delivery, and ready-to-eat meals available daily.</p>
+    <button class="cta-btn" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">Order Now</button>
   </section>
 
-  <section id="services" class="container" aria-label="Services section">
+  <section id="services" class="container">
     <h2>Our Services</h2>
     <div class="services-grid">
       <div class="service-card">
-        <span class="material-icons service-icon" aria-hidden="true">shopping_bag</span>
+        <span class="material-icons service-icon">shopping_bag</span>
         <h3>Takeout</h3>
-        <p>Quick and easy pickup from our restaurant with all your favorite dishes.</p>
+        <p>Quick pickup with all your favorite Kerala dishes.</p>
       </div>
       <div class="service-card">
-        <span class="material-icons service-icon" aria-hidden="true">delivery_dining</span>
+        <span class="material-icons service-icon">delivery_dining</span>
         <h3>Delivery</h3>
-        <p>Fresh meals delivered promptly with care and quality guaranteed.</p>
+        <p>Hot meals delivered safely to your doorstep.</p>
       </div>
       <div class="service-card">
-        <span class="material-icons service-icon" aria-hidden="true">fastfood</span>
+        <span class="material-icons service-icon">fastfood</span>
         <h3>Ready to Eat</h3>
-        <p>Convenient prepared meals that retain authentic Kerala flavors and freshness.</p>
+        <p>Authentic Kerala flavors. No cooking needed.</p>
       </div>
     </div>
   </section>
 
-  <section id="menu" class="container" aria-label="Menu section">
+  <section id="menu" class="container">
     <h2>Featured Menu</h2>
     <div class="menu-grid">
       <article class="menu-card">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/29c589f9-6f65-44fb-8a64-da7ab2c68796.png" alt="Kerala Sadya Platter on banana leaf with traditional dishes" />
-        <h3>Kerala Sadya Platter</h3>
-        <p>Traditional feast served on banana leaf with rice, sambar, avial, pachadi, and payasam.</p>
-        <p class="price">₹350</p>
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/29c589f9-6f65-44fb-8a64-da7ab2c68796.png" alt="Kerala Sadya Platter" />
+        <h3 class="menu-item-name">Kerala Sadya Platter</h3>
+        <p class="menu-item-price">₹350</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
       </article>
       <article class="menu-card">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b74dc1e4-05a7-40cc-892e-a534d8af5cbe.png" alt="Kerala Fish Moilee curry in traditional brass vessel" />
-        <h3>Fish Moilee</h3>
-        <p>Spicy coconut milk fish curry, a Kerala specialty.</p>
-        <p class="price">₹200</p>
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b74dc1e4-05a7-40cc-892e-a534d8af5cbe.png" alt="Fish Moilee" />
+        <h3 class="menu-item-name">Fish Moilee</h3>
+        <p class="menu-item-price">₹200</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
       </article>
       <article class="menu-card">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/14893736-e1a5-4f71-817a-501c7f3d91ed.png" alt="Kerala Malabar Biryani in brass bowl" />
-        <h3>Malabar Biryani</h3>
-        <p>Aromatic chicken biryani cooked with Kerala spices.</p>
-        <p class="price">₹250</p>
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/14893736-e1a5-4f71-817a-501c7f3d91ed.png" alt="Malabar Biryani" />
+        <h3 class="menu-item-name">Malabar Biryani</h3>
+        <p class="menu-item-price">₹250</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
       </article>
     </div>
   </section>
 
-  <section id="order" class="container order-section" aria-label="Place an order section">
-    <h2>Place Your Order</h2>
-    <p>Select your favorite dishes above and choose your payment method.</p>
-    <div class="order-list" aria-live="polite" aria-atomic="true" role="list">
-      <p id="order-empty" class="empty-message">Your order is empty.</p>
-    </div>
+  <section id="order" class="container order-section">
+    <h2>Your Order</h2>
+    <div class="order-list"></div>
     <p class="order-total">Total: ₹<span id="order-total">0</span></p>
     <div class="payment-methods">
-      <button class="payment-btn" data-method="bharatpay" aria-label="Pay with Bharat Pay">
-        <i class="material-icons">payments</i> Bharat Pay
-      </button>
-      <button class="payment-btn" data-method="googlepay" aria-label="Pay with Google Pay">
-        <i class="material-icons">payments</i> Google Pay
-      </button>
-      <button class="payment-btn" data-method="indiapost" aria-label="Pay with India Post Payment Bank">
-        <i class="material-icons">account_balance</i> India Post Payment Bank
-      </button>
-      <button class="payment-btn" data-method="upi" aria-label="Pay with UPI">
-        <i class="material-icons">qr_code</i> UPI
-      </button>
-      <button class="payment-btn" data-method="creditcard" aria-label="Pay with Credit Card">
-        <i class="material-icons">credit_card</i> Credit Card
-      </button>
+      <button class="payment-btn" data-method="bharatpay">Bharat Pay</button>
+      <button class="payment-btn" data-method="googlepay">Google Pay</button>
+      <button class="payment-btn" data-method="indiapost">India Post Payment Bank</button>
+      <button class="payment-btn" data-method="upi">UPI</button>
+      <button class="payment-btn" data-method="creditcard">Credit Card</button>
     </div>
-    <p id="payment-message" class="payment-message" role="alert" aria-live="assertive"></p>
+    <p id="payment-message" class="payment-message"></p>
   </section>
 
   <footer>
@@ -119,4 +103,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
